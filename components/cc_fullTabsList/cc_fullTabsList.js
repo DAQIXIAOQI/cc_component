@@ -58,5 +58,10 @@ Component({
        this.triggerEvent('receive',{source:'fulist',text:e.currentTarget.dataset.text});
        this.toggle();
     }
+    ,
+    close(){
+      this.triggerEvent('close', { source: 'fulist'});
+      this.toggle();
+    }
   }
 })
