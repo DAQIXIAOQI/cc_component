@@ -8,7 +8,7 @@ Component({
     },
     cname: {
       type: String,
-      value: '名称'
+      value: ''
     },
     isrequire: {
       type: Boolean,
@@ -37,6 +37,14 @@ Component({
     height:{
       type:String,
       value:''
+    },
+    single:{
+      type:Boolean,
+      value:true
+    },
+    clear:{
+      type:Boolean,
+      value:true
     }
   },
   data: {
@@ -49,6 +57,14 @@ Component({
   methods: {
     input(e) {
       let value = (e.detail ? e.detail.value : e);
+      if(!this.checkLength(value)) {
+        wx.showToast({
+          title: '选择的模板长度过长~！',
+          icon: 'none',
+          duration: 1000
+        })
+        return
+      }
       if (app.globalData[this.data.setglobal] && app.globalData[this.data.setglobal][this.data.setglobal]) {
         app.globalData[this.data.setglobal][this.data.name].value = value;
       }
@@ -67,6 +83,15 @@ Component({
         value: ''
       });
       this.input("");
+    },
+    checkLength(e){
+     
+      if (this.data.maxlength == -1 || e.length < this.data.maxlength ){ 
+         return true
+       }
+       else{
+         return false
+       }
     }
   }
 })

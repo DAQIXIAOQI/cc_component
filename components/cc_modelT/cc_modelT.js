@@ -19,6 +19,14 @@ Component({
      imgh:{
        type:String,
        value:'1'
+     },
+     bgsrc:{
+       type:String,
+       value:''
+     },
+     height:{
+       type:String,
+       value:''
      }
   },
   data: {

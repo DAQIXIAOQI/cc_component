@@ -1,11 +1,28 @@
 .container {
-  width: 100%;
+  float: left;
 }
 .img-box {
   border-radius: 999rpx;
   overflow: hidden;
+ 
 }
 .text {
   text-align: center;
   font-size: 35rpx;
+}
+.container.editpage  {
+  margin-right:50rpx;
+}
+.container.editpage .img-box {
+  width: 80rpx;
+  height: 80rpx;
+} 
+.container.editpage .img-box {
+  margin: 0 auto;
+}
+.container.editpage .text {
+  font-size: 30rpx;
+  height: 30rpx;
+  line-height: 32rpx;
+  display: inline-block;
 }

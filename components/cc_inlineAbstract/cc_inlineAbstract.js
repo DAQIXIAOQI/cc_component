@@ -12,10 +12,11 @@ Component({
         type:String,
         value:'text'
       },
-      width:{
-        type:Number,
-        value:100
-      }
+      cid:{
+        type:String,
+        value:''
+      },
+      mark:{type:String,value:''}
   },
 
   /**
@@ -29,6 +30,8 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    tap(){
+      this.triggerEvent('callback',{cid:this.data.mark});
+    }
   }
 })

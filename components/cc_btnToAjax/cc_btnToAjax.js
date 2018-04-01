@@ -15,11 +15,15 @@ Component({
     },
     data:{
       type:Object,
-      value:''
+      value:{}
     },
     globalval:{
       type:String,
       value:''
+    },
+    cid:{
+      type:String,
+      value:""
     }
   },
   data: {
@@ -46,6 +50,7 @@ Component({
               that.triggerEvent('ajaxback',{result:e});
           },
           fail(e){
+            that.triggerEvent('ajaxback', { result: e });
             wx.showToast({
               title: '请求失败，请稍后再试~！',
               icon: 'none'
@@ -66,7 +71,8 @@ Component({
                return false
           }
           else{
-            this.data.data[globalData[name].ename] = globalData[name].value;
+            console.log(this.data.data);
+            this.data.data[globalData[name].name] = globalData[name].value;
           }
       }
       return true

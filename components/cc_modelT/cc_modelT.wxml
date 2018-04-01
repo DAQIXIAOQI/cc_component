@@ -3,11 +3,12 @@
 <!--imgW: 图片长度  -->
 <!--imgh：图片宽高比（根据传入的width值去改变img的高度）  -->
 <!--imgsrc: 图片链接  -->
+<!--bgsrc：背景图片链接  -->
 <!--lefttext:左侧按钮文字  -->
 <!--righttext：右侧按钮文字  -->
 <!--事件leftclick：当左侧按钮被单击时触发  -->
 <!--事件rightclick：当右侧按钮被点击时触发  -->
-<view class='container'>
+<view class='container' style="background-image:url({{bgsrc}});min-height:{{height}};">
   <view class='left-btn btn' bindtap='lefttap'>
     <button>{{lefttext}}</button>
   </view>
