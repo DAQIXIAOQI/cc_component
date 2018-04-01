@@ -1,0 +1,8 @@
+<!--不完善的横向flex列表组件  -->
+<view class='list-box'>
+  <view class='list-item-box' wx:for='{{listData}}' wx:key='circle-list'>
+    <view class='list-item'>
+      <view class='item' hover-class='hover-item' data-callback='{{item.callback}}' data-mark='{{item.mark}}' data-url='{{item.url}}' bindtap='click'>{{item.text}}</view>
+    </view>
+  </view>
+</view>

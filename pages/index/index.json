@@ -1,0 +1,15 @@
+{
+  "usingComponents":{
+   "userAbstract":"/components/cc_userAbstract/cc_userAbstract",
+   "btnToPage":"/components/cc_btnToPage/cc_btnToPage",
+   "btnToAjax": "/components/cc_btnToAjax/cc_btnToAjax",
+   "circleList": "/components/cc_circleListHorizon/cc_circleListHorizon",
+   "fullList": "/components/cc_fullTabsList/cc_fullTabsList",
+   "editBox": "/components/cc_editBox/cc_editBox",
+   "inputEditSele":"/components/cc_inputEditSele/cc_inputEditSele",
+   "inputBox": "/components/cc_inputBox/cc_inputBox",
+   "modelT": "/components/cc_modelT/cc_modelT",
+    "inlineAbstract": "/components/cc_inlineAbstract/cc_inlineAbstract",
+    "cartA": "/components/cc_cartA/cc_cartA"
+  }
+}

@@ -1,0 +1,11 @@
+<!--参数：  -->
+<!--text：文字  -->
+<!--imgsrc：图片路径  -->
+
+<view class='container'>
+   <view class='img-box' style='width:{{width+"rpx"}};height:{{width+"rpx"}}'><imgBox src='{{imgsrc}}' ></imgBox>
+   </view> 
+   <view class='text'>
+     {{text}}
+   </view>
+</view>

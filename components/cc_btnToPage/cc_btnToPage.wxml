@@ -1,0 +1,8 @@
+<!--参数：  -->
+<!--text：按钮的名字  -->
+<!--url:要跳转到的page路径  -->
+<!--source:告诉跳转的page页上一步来自哪里  -->
+<!--data: Object,要传到page页的参数,会与source拼在一起   -->
+<button catchtap='toUrl'>
+{{text}}
+</button>

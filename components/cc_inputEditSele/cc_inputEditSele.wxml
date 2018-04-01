@@ -1,0 +1,19 @@
+<!--参数：  -->
+<!--cname：中文名称  -->
+<!--name： 重要！英文名称，存放数据的名字  -->
+<!--setglobal ：重要！存入globaData的组名。存储形式为：app.globalData[setglobal][name]  -->
+<!--isrequire : 是否必填，暂时废置  -->
+<!--placeholder ：默认填充的文字  -->
+<!--value ：value值，可传入  -->
+<!--maxlength ： 可输入的最大长度  -->
+<!--listurl ：是否可从列表选取，需设置列表  -->
+<!--事件saveData：每次值改变，都会触发回调。返回值为value  -->
+<view class='container'>
+  <view class='text-box' bindtap='openEdit'>{{value ? value : placeholder}}</view>
+  <button wx:if='{{listurl != "" && isedit}}' class='sele-box' bindtap='openList'>选择模型</button>
+</view>
+
+<fullList style='z-index:22;position:fixed;top:0;' id='fulist' bind:receive='con'>
+</fullList>
+<editBox id='editBox' placeholder='请输入留言' maxlength='50' mark='message' bind:saveData='con'>
+</editBox>

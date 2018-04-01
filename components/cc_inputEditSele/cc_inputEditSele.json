@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fullList": "/components/cc_fullTabsList/cc_fullTabsList",
+    "editBox": "/components/cc_editBox/cc_editBox"}
+}

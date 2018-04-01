@@ -1,0 +1,8 @@
+<!--参数:  -->
+<!--text:按钮名称  -->
+<!--url:请求链接  -->
+<!--type:请求方式 GET/POST/... -->
+<!--data:Object，请求时必须要传的数据  -->
+<!--globalval：会从app.globalData[globalval]里遍历数据，以键值对的方式并上传入的data，最后作为ajax的参数   -->
+<!--事件ajaxback：请求成功时触发  -->
+<button bindtap='click' disabled='{{!isAble}}'>{{text}}</button>

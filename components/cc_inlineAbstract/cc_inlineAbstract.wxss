@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+}
+.img-box {
+  border-radius: 999rpx;
+  overflow: hidden;
+}
+.text {
+  text-align: center;
+  font-size: 35rpx;
+}

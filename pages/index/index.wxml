@@ -1,0 +1,139 @@
+  <inputEditSele
+    cname ='祝福语'
+    name = 'blessWord'
+    isrequire = 'true'
+    setglobal = 'blessData'
+    placeholder = '点击可输入祝福语吧~！'
+    value=''
+    maxlength = '{{50}}'
+    listurl='1321'
+    isedit='{{false}}'
+    bind:saveData='con'>
+</inputEditSele>
+<inputBox 
+  cname='我的昵称'
+  name='myname'
+  isrequire='true'
+  setglobal='blessData'
+  placeholder='please input name'
+  value = 'cong~'
+  notice = 'dasdasd'
+ >
+</inputBox> 
+
+ <modelT
+    lefttext='规则'
+    righttext='分享'
+    imgsrc='http://img4.imgtn.bdimg.com/it/u=3928311596,4284107616&fm=27&gp=0.jpg'
+    imgW='40vw'
+    imgh='1.3'
+    bind:leftclick='con'
+    bind:rightclick='con'
+></modelT> 
+ <!-- <userAbstract 
+   imgsrc='http://img4.imgtn.bdimg.com/it/u=3928311596,4284107616&fm=27&gp=0.jpg'
+   nameText='王小明'
+   bind:callback='con'
+   >
+</userAbstract>  
+
+ <btnToPage 
+   text='我送出去的祝福'
+   url='/pages/logs/logs'
+   source='index'
+   data='{{btn}}'
+   >
+</btnToPage> 
+
+ <inlineAbstract
+   text='昵称' 
+   imgsrc='http://img4.imgtn.bdimg.com/it/u=3928311596,4284107616&fm=27&gp=0.jpg'
+   width='{{100}}'
+   style ='width:100rpx;display:block;' 
+>
+</inlineAbstract>  
+
+ <circleList
+ listData='{{circleList}}'
+ bind:callback = 'con'
+ >
+</circleList>  
+
+ <modelT
+    lefttext='规则'
+    righttext='分享'
+    imgsrc='http://img4.imgtn.bdimg.com/it/u=3928311596,4284107616&fm=27&gp=0.jpg'
+    imgW='40vw'
+    imgh='1.3'
+    bind:leftclick='con'
+    bind:rightclick='con'
+></modelT>  
+
+ <inputEditSele
+    cname ='祝福语'
+    name = 'blessWord'
+    isrequire = 'true'
+    setglobal = 'blessData'
+    placeholder = '点击可输入祝福语吧~！'
+    value=''
+    maxlength = '{{50}}'
+    listurl='1321'
+    bind:saveData='con'>
+</inputEditSele> 
+<inputBox 
+  cname='我的昵称'
+  name='myname'
+  isrequire='true'
+  setglobal='blessData'
+  placeholder='please input name'
+  value = 'cong~'
+  maxlength = '5'
+  notice = ''
+ >
+</inputBox> 
+
+ <btnToAjax
+     text='sendData'
+     url='dsaada'
+     type='POST'
+     data='{{ajaxData}}'
+     globalval='blessData'
+     bind:ajaxback = 'con'
+></btnToAjax>  -->
+
+
+<!-- 
+<button bindtap='click'>123</button>
+<fullList style='position:fixed;top:0;z-index=11' id='fulist' bind:receive = 'con'>
+</fullList>
+<button bindtap='clickEdit'>editbox</button>
+<editBox
+  id='editBox'
+  text='填写留言'
+  defaultText='请输入留言'
+  name='message'
+  bind:receiveData='con'>
+</editBox> -->
+<!-- 
+
+ 
+ -->
+
+<button bindtap='consoleGlob'>showglobal</button>
+<circleList
+ listData='{{circleList}}'
+ bind:callback = 'con'
+ >
+</circleList> 
+<inlineAbstract
+   text='昵称' 
+   imgsrc='http://img4.imgtn.bdimg.com/it/u=3928311596,4284107616&fm=27&gp=0.jpg'
+   width='{{100}}'
+   style ='width:100rpx;display:block;' 
+>
+
+</inlineAbstract> 
+
+
+  
+<cartA width='50vw' imgh='0.5' maintext='中间的文字' lefttext='xiaoming' righttext='85zan' mark='11' imgsrc='http://img4.imgtn.bdimg.com/it/u=3928311596,4284107616&fm=27&gp=0.jpg' bind:callback='con' style='display:block;float:left;'></cartA> 

@@ -1,0 +1,30 @@
+/* components/cc_circleListHorizon/cc_circleListHorizon.wxss */
+.list-box {
+  display: flex;
+}
+.list-item-box {
+  flex-grow: 1;
+  text-align: center;
+}
+.list-item { 
+  display: inline-block;
+}
+.item {
+  display: flex;    
+  align-items: center;
+  justify-content: center;
+   width: 100rpx;
+  height: 100rpx;
+  background: #ccc;
+  border-radius: 999rpx;
+  color:white;
+  font-size: 35rpx;
+  transition: all 0.4s linear;
+}
+.hover-item {
+  opacity: 0.8;
+}
+
+item:active {
+  box-shadow: 0 0 10rpx #a12;
+}

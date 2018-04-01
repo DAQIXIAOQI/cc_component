@@ -1,0 +1,24 @@
+<!--接受参数如下：-->
+<!--cname：中文名称  -->
+<!--name： 重要！英文名称，存放数据的名字  -->
+<!--setglobal ：重要！存入globaData的组名。存储形式为：app.globalData[setglobal][name]  -->
+<!--isrequire：布尔值，是否必填项-->
+<!--placeholder：字符串，默认值-->
+<!--value: 字符串，初始值-->
+<!--maxlength：数字，允许输入的最大长度-->
+<!--notice:字符串,红色提示语-->
+<!--height:输入框高度，若传入，则应用input框，否则显示input框  -->
+<!--输入的数据会自动存入globalData[setglobal][name]里-->
+<!--结束-->
+<view class='input-container' style='height:{{height == "" ? "60rpx" : height}}'>
+  <view class='input-content'>
+    <text class='name'>{{cname}}:</text>
+    <view class='input-box'>
+       <input wx:if="{{height == ''}}" bindinput='input' value='{{value}}' type='text' maxlength='{{maxlength}}' placeholder='{{placeholder?placeholder:"请输入"+name}}' ></input> 
+        <textarea wx:if="{{height != ''}}" bindinput='input' value='{{value}}' type='text' maxlength='{{maxlength}}' placeholder='{{placeholder?placeholder:"请输入"+name}}' ></textarea> 
+      <icon type='cancel' color='#000' class='{{value == "" ? "hide" : ""}}' bindtap='clear'></icon>
+     
+    </view>
+  </view>
+  <view class='input-notice'>{{notice?'*'+notice:''}}</view>
+</view>
