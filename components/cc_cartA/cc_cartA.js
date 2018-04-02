@@ -31,6 +31,14 @@ Component({
     imgsrc: {
       type: String,
       value: ''
+    },
+    cid:{
+      type:String,
+      value:""
+    },
+    title:{
+      type:String,
+      value:''
     }
   },
   data: {
@@ -38,10 +46,11 @@ Component({
   },
   ready() {
     if (this.data.width) {
-      let nr = /(\d+)([a-zA-Z]+)/g.exec(this.data.width);
+      let v = this.data.width.match(/(\d+(\.\d+)?)/)[0];
+      let u = this.data.width.match(/([a-zA-Z]+)/)[0];   
       let temp = {
-        value: parseInt(nr[1]) * parseFloat(this.data.imgh),
-        unit: nr[2]
+        value: parseFloat(v) * parseFloat(this.data.imgh),
+        unit: u
       }
       this.setData(
         { imgh: temp.value + temp.unit }

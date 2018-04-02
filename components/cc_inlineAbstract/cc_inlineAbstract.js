@@ -16,7 +16,11 @@ Component({
         type:String,
         value:''
       },
-      mark:{type:String,value:''}
+      mark:{type:String,value:''},
+      imgw:{
+        type:String,
+        value:""
+      }
   },
 
   /**
@@ -31,7 +35,7 @@ Component({
    */
   methods: {
     tap(){
-      this.triggerEvent('callback',{cid:this.data.mark});
+      this.triggerEvent('callback',{mark:this.data.mark});
     }
   }
 })

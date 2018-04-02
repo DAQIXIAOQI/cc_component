@@ -4,6 +4,9 @@
 .img-box {
   border-radius: 999rpx;
   overflow: hidden;
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 auto;
  
 }
 .text {
@@ -25,4 +28,16 @@
   height: 30rpx;
   line-height: 32rpx;
   display: inline-block;
+}
+
+.container.bless .text {
+ color:#f59165;
+ font-size: 30rpx;
+}
+.container.sender {
+ margin-top: -18rpx;
+ margin-left: 8rpx;
+}
+.container.geter {
+  margin:0 30rpx 50rpx 0; 
 }

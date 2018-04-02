@@ -1,6 +1,6 @@
 <!--接受参数如下：-->
 <!--cname：中文名称  -->
-<!--name： 重要！英文名称，存放数据的名字  -->
+<!--name： 重要！英文名称，存放数据的名字，同时生成一个name值的class名  -->
 <!--setglobal ：重要！存入globaData的组名。存储形式为：app.globalData[setglobal][name]  -->
 <!--isrequire：布尔值，是否必填项-->
 <!--placeholder：字符串，默认值-->
