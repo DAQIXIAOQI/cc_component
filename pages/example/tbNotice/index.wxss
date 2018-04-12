@@ -1,0 +1,5 @@
+@import '../../../template/template.wxss';
+
+.top {
+  margin-top: 100rpx;
+}

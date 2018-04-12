@@ -1,0 +1,9 @@
+@import '../../../template/template.wxss';
+
+.main {
+  padding: 50rpx 0;
+}
+.img-box {
+ width: 200rpx;
+ height: 200rpx;
+}

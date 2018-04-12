@@ -1,0 +1,36 @@
+@import '../../../template/template.wxss';
+
+.main {
+  margin-top: 50rpx;
+}
+.item {
+  margin: 20rpx 0;
+}
+.options-item {
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 10rpx 0 ;
+}
+.options-item .option-name {
+  color: #2F3029;
+  display: inline-block;
+  width: 40%;
+  float: left;
+}
+.options-item .option-value-boo{
+  display: inline-block;
+  line-height: 60rpx;
+  color: #F4F5E9;
+}
+.options-item .option-value-boo.true{
+  background-color: rgb(47,172,37);
+}
+.options-item .option-value-boo.false{
+  background-color: rgb(186,20,21);
+}
+.options-item .option-input {
+  background-color: white;
+  max-width: 30%;
+  float: left;
+  margin-right: 3%;
+}

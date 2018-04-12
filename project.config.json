@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.91",
 	"appid": "wx83e1aac12c12d679",
-	"projectname": "chec",
+	"projectname": "cc_component",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
@@ -27,7 +27,14 @@
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": []
+			"list": [
+				{
+					"id": 0,
+					"name": "imgBox",
+					"pathName": "pages/example/inputBox/index",
+					"query": ""
+				}
+			]
 		}
 	}
 }

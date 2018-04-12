@@ -1,0 +1,31 @@
+<template name = 'list-btn'>
+  <view class = 'list-btn' hover-class='list-btn-hover'>
+    {{item.name}}
+  </view>
+</template>
+
+<template name = 'component-explain'>
+  <view class = 'component-info' >
+    <view class = 'info-title'>{{temData.title}}</view>
+    <view class = 'info-explain'>{{temData.explain}}</view>
+    <view class = 'info-para' >
+      <view class='info-para-title'>参数：</view>
+      <view class='info-para-box'>
+        <view class='para-item'>
+          <text class='para-name'>name</text>
+          <text class='para-type'>type</text>
+          <text class='para-default'>default</text>
+          <text class='para-remark'>remark</text>
+          </view>
+      <block wx:for='{{temData.para.list}}' wx:key='{{temData.para.key}}'>
+        <view class='para-item'> 
+          <text class='para-name'>{{item.name}}</text>
+          <text class='para-type'>{{item.type}}</text>
+          <text class='para-default'>{{item.default}}</text>
+          <text class='para-remark'>{{item.remark}}</text>
+        </view> 
+      </block>
+       </view>
+    </view>  
+  </view>
+</template>

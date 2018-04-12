@@ -1,0 +1,5 @@
+{
+  "usingComponents":{
+    "tbNotice":"../../../components/cc_tbNotice/cc_tbNotice"
+  }
+}

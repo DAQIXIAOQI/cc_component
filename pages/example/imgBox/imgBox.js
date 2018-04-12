@@ -1,11 +1,35 @@
-// pages/opa/opa.js
+// pages/example/imgBox/imgBox.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    temData:{
+    title:'imgBox 图片容器',
+    para:{
+      key:"imgBox-para",
+      list:[
+        {
+          "name":"src",
+          "type":"String",
+          "remark":"展示的图片路径",
+          "default":""
+        }, {
+          "name": "preview",
+          "type": "Boolean",
+          "remark": "点击是否可以预览",
+          "default":'false'
+        }, {
+          "name": "filling",
+          "type": "Boolean",
+          "remark": "true：自动填充父元素，false：根据宽度自适应",
+          "default": 'true'
+        },
+      ]
+    },
+    explain:"使图片加载完再显示的一个组件。（透明度渐变淡入）"
+    }
   },
 
   /**

@@ -1,12 +1,9 @@
 .input-container {
   width: 100%;
   font-size: 33rpx;
-  
-  /*---*/
   background-color: white;
- 
-  
 }
+
 .input-content text{
   width: 20%;
   text-align: right;
@@ -16,13 +13,22 @@
   padding: 0 2%;
   height: 100%;
 }
-.input-content {
-  height: 100%;
-  line-height: 100rpx;
+
+.input-content.single {
+  height: 60rpx;
+  line-height: 60rpx;
 }
 .input-content.unsingle {
   line-height: inherit;
+  height:150rpx;
+  padding:30rpx 5%;
 }
+
+.input-content.single text.name {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
 .input-content.noclear .input-box textarea ,.input-content.noclear .input-box input {
   width: 90%;
 }
@@ -36,22 +42,31 @@
   position: relative;
   overflow: hidden;
 }
-.input-content .input-box.full {
+.input-content .input-box.full,.input-notice.full {
   width: 100%;
   margin-left: 0%;
+}
+.input-notice.full {
+  width: 90%;
+  margin: 0 5%;
 }
 .input-content .input-box input,.input-content .input-box textarea {
   display: inline-block;
   height: 100%;
-  padding: 0 5%; 
-  width: 75%;
-  min-width: 75%;
+  min-width: 65%;
 }
-.input-content.unsingle .input-box textarea {
-  height:70%;
-padding:5% 5%;
+.input-content.unsingle .input-box textarea ,.input-content .input-box.full input {
+  min-width: 80%;
+  max-width: 80%;
+}
+.input-content.unsingle.noclear .input-box.full textarea {
+  max-width: 100%;
+  width: 100%;
+}
+.input-content.single .input-box.full input {
+  padding: 0 5%;
+}
 
-}
 .input-content .input-box icon {
   display: flex;
   height: 100%;

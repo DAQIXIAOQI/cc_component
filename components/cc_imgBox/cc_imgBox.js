@@ -11,6 +11,10 @@ Component({
        preview:{
          type:Boolean,
          value:false
+       },
+       filling:{
+         type:Boolean,
+         value:true
        }
   },
   data: {
@@ -20,8 +24,7 @@ Component({
     
   }
   ,
-  methods: {
-    
+  methods: { 
        load(){
          this.setData({
            isLoad: true

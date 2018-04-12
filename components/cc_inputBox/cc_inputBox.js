@@ -1,14 +1,17 @@
 const app = getApp()
 Component({
   properties: {
-   
+    cnameShow:{
+      type: Boolean,
+      value: true  
+    },
     name: {
       type: String,
       value: ''
     },
     cname: {
       type: String,
-      value: ''
+      value: '默认'
     },
     isrequire: {
       type: Boolean,
@@ -80,7 +83,7 @@ Component({
         }   
         let obj = this.data;
         obj.value = value;
-        app.globalData[this.data.setglobal][this.data.name] = obj;  
+        app.globalData[this.data.setglobal][this.data.name] = {value:obj.value,isrequire:obj.isrequire,cname:obj.cname,maxlength:obj.maxlength,cid:obj.cid};  
       }
       }
       this.setData({"value":value});
@@ -100,6 +103,10 @@ Component({
        else{
          return false
        }
+    },
+    anC(obj){
+      this.setData(obj);
+      this.input(obj.value);
     }
   }
 })

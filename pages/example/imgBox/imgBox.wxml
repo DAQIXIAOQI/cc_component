@@ -1,0 +1,14 @@
+<import src='../../../template/template.wxml' />
+
+<view class = 'content' >
+  <view class='top'>
+    <template is = 'component-explain' data='{{temData}}'>
+    </template>
+  </view>
+  <view class='main'>
+    <text class='text-mediun'>默认</text>
+    <view class='img-box'><imgBox src='../../images/02.png'></imgBox></view>
+    <text class='text-mediun'>状态：fill=false,preview=true</text>
+    <imgBox src='../../images/02.png' filling='{{false}}' preview='{{true}}'></imgBox>
+  </view>  
+</view>

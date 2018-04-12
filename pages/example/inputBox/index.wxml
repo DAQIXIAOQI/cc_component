@@ -1,0 +1,28 @@
+<import src='../../../template/template.wxml' />
+
+<view class = 'content' >
+  <view class='top'>
+    <template is = 'component-explain' data='{{temData}}'>
+    </template>
+  </view>
+  <view class='main'>
+  配置：<button  bindtap='showGlobal' class='option-value-boo true'>显示全局变量</button>
+  <view class='option-box'>
+    <view class='item'>
+      <inputBox id='inputBox'></inputBox>
+    </view>
+    <block wx:for='{{options.boo}}' wx:key='inputBox-options-boo'>
+    <view class='options-item'>
+    <text class='option-name'>{{index}}</text><button data-name='{{index}}' data-value='{{item}}' bindtap='toggleBoo' class='option-value-boo {{item}}'>{{ item }}</button>
+    </view>
+    </block>
+    <block wx:for='{{options.str}}' wx:key='inputBox-options-str'>
+    <view class='options-item'>
+    <text class='option-name'>{{index}}</text>
+    <input data-name='{{index}}' data-value='{{item}}' value='{{item}}' bindinput='inputV' class='option-input' type='input'></input>
+    <button  bindtap='update' class='option-value-boo true'>应用</button>
+    </view>
+    </block>
+  </view> 
+  </view>  
+</view>

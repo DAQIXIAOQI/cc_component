@@ -14,20 +14,24 @@
 <!--事件input:每次键入值都会回调  -->
 <!--输入的数据会自动存入globalData[setglobal][name]里-->
 <!--结束-->
-<view class='input-container {{name}} {{cid}} ' style='height:{{height == "" ? "60rpx" : height}}'>
-  <view class='input-content {{!clear ? "noclear" :""}}' wx:if="{{single}}">
-    <text class='name' wx:if='{{cname!=""}}'>{{cname}}:</text>
-    <view class='input-box {{cname == "" ? "full":""}}'>
+
+<view class='input-container {{name}} {{cid}} '>
+
+  <view class='input-content single {{!clear ? "noclear" :""}}' style='height:{{height == "" ? "" : height}}' wx:if="{{single}}">
+    <text class='name' wx:if='{{cnameShow}}' style='line-height:{{height == "" ? "" : height}}'>{{cname == "" ? "null" :cname}}:</text>
+    <view class='input-box {{!cnameShow ? "full":""}}'>
        <input  bindinput='input' value='{{value}}' type='text' maxlength='{{maxlength}}' placeholder='{{placeholder?placeholder:"请输入"+cname}}' ></input> 
       <icon type='cancel' color='#000' class='{{value == "" ? "hide" : ""}}' bindtap='clear'></icon>
     </view>
   </view>
-   <view class='input-content unsingle {{!clear ? "noclear" :""}}' wx:if="{{!single}}" >
-    <text class='name' wx:if='{{cname!=""}}'>{{cname}}:</text>
-    <view class='input-box {{cname == "" ? "full":""}}'>
+
+   <view class='input-content unsingle {{!clear ? "noclear" :""}}' style='height:{{height == "" ? "" : height}}' wx:if="{{!single}}" >
+    <text class='name' wx:if='{{cnameShow}}'>{{cname == "" ? "null" :cname}}:</text>
+    <view class='input-box {{!cnameShow ? "full":""}}'>
         <textarea   bindinput='input' value='{{value}}' type='text' maxlength='{{maxlength}}' placeholder='{{placeholder?placeholder:"请输入"+cname}}' ></textarea> 
       <icon type='cancel' color='#000' class='{{value == "" ? "hide" : ""}}' bindtap='clear'></icon>
     </view>
   </view>
-  <view class='input-notice'>{{notice?notice:''}}</view>
+
+  <view class='input-notice {{!cnameShow ? "full":""}}' wx:if='{{notice}}'>{{notice?notice:''}}</view>
 </view>

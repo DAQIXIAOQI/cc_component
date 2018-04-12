@@ -1,4 +1,4 @@
-@import  "/font/iconfont.wxss" ;
+
 .container {
   width: 100%;
   background: lightblue;
