@@ -1,0 +1,12 @@
+<import src='../../../template/template.wxml' />
+
+<view class = 'content' >
+  <view class='top'>
+    <template is = 'component-explain' data='{{temData}}'>
+    </template>
+  </view>
+    <view class='main'>
+    <userAbstract imgsrc='../../images/02.png' nameText='姓名呢' bind:click ='click'></userAbstract>
+  </view>  
+</view>
+

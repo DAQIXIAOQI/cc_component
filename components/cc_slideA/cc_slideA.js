@@ -5,16 +5,20 @@ Component({
          imgurl:{
            type:Array,
            value:[]
+         },
+         separate:{
+           type:Number,
+           value:3000
          }
   },
   data: {
-    sid:'A1',
+    sid:'A2',
     itemWidth:74
   },
   ready(){
     let that = this ;
     this.setData({
-       width:this.data.imgurl.length*this.data.itemWidth + 'vw'
+       width:this.data.imgurl.length*this.data.itemWidth + 'vw',
     });
     interval.length = this.data.imgurl.length;
     interval.dir = true;
@@ -44,6 +48,9 @@ Component({
         sid: 'A' + this.nowPos
       });   
     }
+    this.setData({
+      sid:'A1'
+    });
     this.interval();
   },
   detached(){
@@ -56,7 +63,7 @@ Component({
       clearInterval(interval.timer);
       interval.timer = setInterval(function(){
             this.stoggle();
-      }.bind(interval),5000);
+      }.bind(interval),this.data.separate+2000);
     },
     touchstart(e){
       // interval.nowPos = e.currentTarget.dataset.index ;
@@ -64,7 +71,7 @@ Component({
       clearTimeout(interval.timer1);
       interval.timer1 = setTimeout(function(){
             this.interval();
-      }.bind(this),3000);
+      }.bind(this),this.data.separate);
     },
     tap(e){
       this.setData({

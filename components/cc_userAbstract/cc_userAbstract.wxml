@@ -2,7 +2,7 @@
 <!--参数：  -->
 <!--imgsrc: 图片链接  -->
 <!--nameText：用户名字  -->
-<!--事件callback：当图片被点击的时候触发  -->
+<!--事件click：当图片被点击的时候触发  -->
 <view class='container default'>
      <view class='img-box default'catchtap='callback'><imgBox class='default' src='{{imgsrc}}'></imgBox></view>
      <view class='name default'><text class='default'>{{nameText}}</text></view>

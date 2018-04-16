@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/example/imgBox/imgBox",
     "pages/example/tbNotice/index",
-    "pages/example/inputBox/index"
+    "pages/example/inputBox/index",
+    "pages/example/slide/index",
+    "pages/example/userAbstract/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

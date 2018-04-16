@@ -26,12 +26,12 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 0,
 			"list": [
 				{
 					"id": 0,
 					"name": "imgBox",
-					"pathName": "pages/example/inputBox/index",
+					"pathName": "pages/index/index",
 					"query": ""
 				}
 			]

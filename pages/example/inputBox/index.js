@@ -94,6 +94,11 @@ Page({
             "type": "String",
             "remark": "业务标识，可用于业务样式",
             "default": ''
+          }, {
+            "name": "事件：input",
+            "type": "事件",
+            "remark": "当有字符输入时触发的回调，输入值作为参数传出",
+            "default": ''
           },
         ]
       },

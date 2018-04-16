@@ -1,0 +1,8 @@
+@import '../../../template/template.wxss';
+
+.content {
+ padding: 1vh 0;
+}
+.top {
+  margin: 30rpx;
+}

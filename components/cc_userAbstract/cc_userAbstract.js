@@ -19,7 +19,7 @@ Component({
   },
   methods: {
     callback:function(){
-      this.triggerEvent("callback",{name:this.data.nameText,imgSrc:this.data.headerSrc});
+      this.triggerEvent("click",{name:this.data.nameText,imgSrc:this.data.headerSrc});
     }
   }
 })

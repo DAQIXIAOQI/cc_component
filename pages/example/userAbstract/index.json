@@ -1,0 +1,5 @@
+{
+  "usingComponents":{
+    "userAbstract":"../../../components/cc_userAbstract/cc_userAbstract"
+  }
+}

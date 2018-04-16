@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "slide": "../../../components/cc_slideA/cc_slideA"
+  }
+}
