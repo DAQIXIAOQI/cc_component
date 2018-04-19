@@ -8,16 +8,16 @@
 <!--外部可使用函数：  -->
 <!--toggle()：控制输入框是否出现  -->
 <!--setValue()：动态设置userInput的值  -->
-<view class='pop-box {{isShow?"show":""}}'>
-  <view bindtap='toggle' class='mask '>
+<view class='pop-box {{isShow?"show":""}}' catchtouchmove='cancelSlide' >
+  <view  class='mask ' bindtap='toggle' >
   </view>
-  <view class='input-box'>
+  <view class='input-box' >
     <icon type='cancel' color='#000' bindtap='toggle'></icon>
     <form bindsubmit='changeValue'>
       <textarea fixed="true" name='textarea' maxlength='{{maxlength}}' placeholder='{{placeholder}}' value='{{userInput}}' type='text'></textarea>
       <view class='btn-box'>
         <button type='default' form-type='reset'>重置</button>
-        <button type='primary' form-type='submit'>保存</button>
+        <button type='primary' form-type='submit'>留言</button>
       </view>
     </form>
   </view>

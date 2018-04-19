@@ -25,7 +25,6 @@ Component({
     isShow:false
   },
   ready(){
-    console.log(this.data.userInput);
   },
   methods: {
     toggle: function () {
@@ -39,16 +38,8 @@ Component({
         this.setData({
           userInput: e.detail.value.textarea
         });
-
-        wx.showToast({
-          title: '保存成功',
-          icon: 'success',
-          duration: 2000,
-          success() {
-            that.toggle();
-            that.triggerEvent('saveData', { mark: that.data.mark, value: that.data.userInput });
-          }
-        });
+        that.toggle();
+        that.triggerEvent('saveData', { mark: that.data.mark, value: that.data.userInput });
       }
       else {
         wx.showToast({
@@ -69,6 +60,9 @@ Component({
         userInput:val
       })
       this.toggle();
+    },
+    cancelSlide(){
+      return
     }
   }
 })
